@@ -1,0 +1,202 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* 
+  ===== Estilos Gerais ===== 
+*/
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 120, 120, 0.8);
+  z-index: -1;
+}
+
+/* 
+  ===== Estilos da Hotbar ===== 
+*/
+
+.hotbar {
+  background-color: #3f3f3f;
+  color: #a0a0a0;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+
+.hotbar a {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.hotbar a:hover {
+    text-decoration: none;
+}
+
+.hotbar h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+/* 
+  ===== Estilos da Seção Principal (main) ===== 
+*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px; /* Acomoda a altura da hotbar */
+}
+
+/* 
+  ===== Estilos das Seções (section) ===== 
+*/
+
+section {
+  color: #3f3f3f;
+  text-align: left;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+section h1 {
+  font-size: 45px;
+  text-align: center; /* Centraliza o título da seção */
+  margin-bottom: 1rem;  /* Adiciona espaço abaixo do título */
+}
+
+/* 
+  ===== Estilos de Inputs ===== 
+*/
+
+section input {
+  width: 30rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #3f3f3f;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 2px; /* Define a espessura da borda */
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+/* 
+  ===== Estilos de Botões ===== 
+*/
+
+section button {
+  padding: 1rem;
+  border: none;
+  background-color: #d05e00;
+  color: #F5F7F8;
+  font-size: 1rem;
+  cursor: pointer;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+section button:hover {
+  background-color: #843b00;
+}
+
+section button:active {
+  background-color: #F5F7F8;
+  color: #d05e00;
+}
+
+/* 
+  ===== Estilos da Caixa de Resultados ===== 
+*/
+
+.resultados-pesquisa {
+    display: flex;
+    align-items: center;
+    width: 60rem;
+    height: 33vh;
+    overflow-y: auto;
+    border-radius: 0.5rem;
+
+    /* Barra de Rolagem - WebKit (Chrome, Safari, Edge) */
+    &::-webkit-scrollbar {
+        width: 8px;            /* Largura da barra de rolagem */
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;    /* Cor de fundo da trilha */
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #888;       /* Cor da barra de rolagem */
+        border-radius: 4px;   /* Borda arredondada para a barra */
+    }
+}
+
+/* 
+  ===== Estilos dos Itens de Resultado ===== 
+*/
+
+.link-resultado{
+    text-decoration: none;
+}
+
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    /* Propriedades da Borda */
+    border-width: 3px;   /* Espessura da borda */
+    border-style: solid;  /* Estilo da borda (sólida) */
+    border-color: #000000;   /* Cor da borda (cinza claro) */
+}
+
+.item-resultado h3 {
+    font-size: 1.5rem;
+    color: #222831;
+    margin-top: 0rem; /* Ajuste aqui: margem superior negativa */
+    margin-bottom: 0.5rem;
+}
+
+.descricao { /* Descrição dentro dos resultados */
+    color: #45474B;
+    margin: 0rem;
+}
+
+/* 
+  ===== Estilos do Rodapé ===== 
+*/
+
+footer {
+    background-color: #3f3f3f;
+    color: #d8d8d8;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
