@@ -12,10 +12,10 @@ function pesquisar(){
 
     resultado = "";
     
-    for (let dado of interesses){
+    for (let dado of dados){
         if (dado.titulo.toLowerCase().includes(busca)||dado.descricao.toLowerCase().includes(busca)){
             resultado += 
-            `<a href="content.html?id=${dado.id}" target="_blank" class="link-resultado">
+            `<a href="content.html?id=${dado.id}" target="_self" class="link-resultado">
                 <div class="item-resultado">
                     <h3>${dado.titulo}</h3>
                     <p class="descricao">${dado.descricao}</p>

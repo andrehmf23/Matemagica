@@ -17,7 +17,7 @@ body {
 
 body::before {
   content: "";
-  position: absolute;
+  position:fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -33,12 +33,11 @@ body::before {
 .hotbar {
   background-color: #3f3f3f;
   color: #a0a0a0;
-  padding: 10px 20px;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
+  max-width: 100%;
   height: auto;
-  z-index: 100;
 }
 
 .hotbar a {
@@ -53,7 +52,7 @@ body::before {
 .hotbar h1 {
   font-weight: bold;
   font-size: 40px;
-  margin: 0;
+  margin: 10px;
 }
 
 /* 
@@ -90,101 +89,32 @@ section h1 {
   ===== Estilos de Inputs ===== 
 */
 
-section input {
-  width: 30rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  color: #3f3f3f;
-  font-size: 1rem;
-  box-sizing: border-box;
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
-  border-width: 2px; /* Define a espessura da borda */
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+.conteudo-dinamico {
+  background-color: rgba(210, 210, 210, 0.8);
+  margin: 3rem;
 }
 
-/* 
-  ===== Estilos de Botões ===== 
-*/
-
-section button {
-  padding: 1rem;
-  border: none;
-  background-color: #d05e00;
-  color: #F5F7F8;
-  font-size: 1rem;
-  cursor: pointer;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+.conteudo-dinamico h1 {
+  font-size: 45px;
+  text-align: center; /* Centraliza o título da seção */
+  
+  margin: 1.5rem;  /* Adiciona espaço abaixo do título */
 }
 
-section button:hover {
-  background-color: #843b00;
+.conteudo-dinamico {
+  /* Estilos gerais para o conteúdo */
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
-section button:active {
-  background-color: #F5F7F8;
-  color: #d05e00;
+.conteudo-dinamico ul {
+  list-style: disc;
+  margin-left: 20px;
 }
 
-/* 
-  ===== Estilos da Caixa de Resultados ===== 
-*/
-
-.resultados-pesquisa {
-    display: flex;
-    align-items: center;
-    width: 60rem;
-    height: 33vh;
-    overflow-y: auto;
-    border-radius: 0.5rem;
-
-    /* Barra de Rolagem - WebKit (Chrome, Safari, Edge) */
-    &::-webkit-scrollbar {
-        width: 8px;            /* Largura da barra de rolagem */
-    }
-
-    &::-webkit-scrollbar-track {
-        background: #f1f1f1;    /* Cor de fundo da trilha */
-        border-radius: 4px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: #888;       /* Cor da barra de rolagem */
-        border-radius: 4px;   /* Borda arredondada para a barra */
-    }
-}
-
-/* 
-  ===== Estilos dos Itens de Resultado ===== 
-*/
-
-.link-resultado{
-    text-decoration: none;
-}
-
-.item-resultado {
-    background: #FFFFFF;
-    border-radius: 0.6rem;
-    padding: 0.75rem;
-    margin-bottom: 0.5rem;
-    /* Propriedades da Borda */
-    border-width: 3px;   /* Espessura da borda */
-    border-style: solid;  /* Estilo da borda (sólida) */
-    border-color: #000000;   /* Cor da borda (cinza claro) */
-}
-
-.item-resultado h3 {
-    font-size: 1.5rem;
-    color: #222831;
-    margin-top: 0rem; /* Ajuste aqui: margem superior negativa */
-    margin-bottom: 0.5rem;
-}
-
-.descricao { /* Descrição dentro dos resultados */
-    color: #45474B;
-    margin: 0rem;
+.conteudo-dinamico ol {
+  list-style: decimal;
+  margin-left: 20px;
 }
 
 /* 
@@ -196,7 +126,7 @@ footer {
     color: #d8d8d8;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }

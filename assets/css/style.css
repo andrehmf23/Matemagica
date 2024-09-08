@@ -173,6 +173,7 @@ section button:active {
     border-width: 3px;   /* Espessura da borda */
     border-style: solid;  /* Estilo da borda (sólida) */
     border-color: #000000;   /* Cor da borda (cinza claro) */
+    width: 57rem;
 }
 
 .item-resultado h3 {
