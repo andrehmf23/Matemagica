@@ -11,4 +11,4 @@ O conteúdo gerado foi formulado por IA.
 * HTML
 
 ## Como Executar
-Podem acessar pelo link: https://desafio-imersao-alura-2024-b44jp7xnp-andrehmf23s-projects.vercel.app/
+Podem acessar pelo link: https://matemagica23.vercel.app/
